@@ -591,7 +591,7 @@ namespace ARSoft.Tools.Net.Dns
 		#region Serializing
 		protected virtual void PrepareEncoding() {}
 
-		internal int Encode(bool addLengthPrefix, out byte[] messageData)
+		public int Encode(bool addLengthPrefix, out byte[] messageData)
 		{
 			byte[] newTSigMac;
 

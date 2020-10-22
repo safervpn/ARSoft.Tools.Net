@@ -1,0 +1,14 @@
+bin
+obj
+Thumbs.db
+
+*.vs
+*.suo
+*.sdf
+*.user
+*.tmp
+_ReSharper.*
+/*.DotSettings
+*/project.lock.json
+*.sdf
+*.VC.db
