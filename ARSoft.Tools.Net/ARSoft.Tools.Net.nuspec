@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/alexreinert/ARSoft.Tools.Net/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/alexreinert/ARSoft.Tools.Net</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This project contains a complete managed .Net DNS and DNSSEC client, a DNS server and SPF and SenderID validation.</description>
+    <releaseNotes>Updated version which allows to encode dns packets.</releaseNotes>
+    <copyright>Copyright 2010..2017 Alexander Reinert</copyright>
+    <tags>dns dnssec spf</tags>
+
+    <dependencies>
+      <group targetFramework="net45">
+        <dependency id="BouncyCastle" version="1.8.1" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
