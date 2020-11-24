@@ -15,7 +15,7 @@
     <tags>dns dnssec spf</tags>
 
     <dependencies>
-      <group targetFramework="net45">
+      <group targetFramework=".NETFramework4.5">
         <dependency id="BouncyCastle" version="1.8.1" />
       </group>
     </dependencies>
