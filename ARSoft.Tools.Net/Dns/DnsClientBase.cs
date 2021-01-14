@@ -26,7 +26,6 @@ using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
-using Org.BouncyCastle.Crypto.Prng;
 using Org.BouncyCastle.Security;
 
 namespace ARSoft.Tools.Net.Dns
@@ -289,7 +288,7 @@ namespace ARSoft.Tools.Net.Dns
 
 		private byte[] QueryByUdp(DnsClientEndpointInfo endpointInfo, byte[] messageData, int messageLength, out IPAddress responderAddress)
 		{
-			using (var udpClient = new Socket(endpointInfo.LocalAddress.AddressFamily, SocketType.Dgram, ProtocolType.Udp))
+			using (var udpClient = new System.Net.Sockets.Socket(endpointInfo.LocalAddress.AddressFamily, SocketType.Dgram, ProtocolType.Udp))
 			{
 				try
 				{
@@ -322,7 +321,7 @@ namespace ARSoft.Tools.Net.Dns
 			}
 		}
 
-		private void PrepareAndBindUdpSocket(DnsClientEndpointInfo endpointInfo, Socket udpClient)
+		private void PrepareAndBindUdpSocket(DnsClientEndpointInfo endpointInfo, System.Net.Sockets.Socket udpClient)
 		{
 			if (endpointInfo.IsMulticast)
 			{
